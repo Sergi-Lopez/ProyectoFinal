@@ -1,0 +1,16 @@
+Programados:
+- DificultadPlugin.js
+- ExperienciaPlugin.js
+- OroPlugin.js
+- LlamarEventos.js
+- Cinematicas.js
+
+Los tres primeros tienen un funcionamiento muy similar con la diferencia de que ExperienciaPlugin y OroPlugin cambian los valores en el sistema del videojuego para modificar las recompensas y DificultadPlugin solo modifica valores de los enemigos. Al tener un funcionamiento parecido solo hay uno en el que con comentarios se indica que hace cada parte del código aunque sin entrar en demasiado detalle (OroPlugin.js).
+Después LlamarEventos.js se encarga de gestionar todos los eventos posibles desde código, permitiendo así una mayor personalización y sobre todo un control mucho mayor de las acciones que se pueden realizar en el juego.
+Por último Cinematicas.js se encarga del control de las cinematicas, al activar este plugin empezará a mover de forma automática al personaje mostrando dialogos y haciendo las acciones correspondientes.
+
+Modificados:
+- SRPG_TerrainEffect.js
+Linea 766 - 788
+
+Básicamente consiste en una modificación para añadir un factor más de estratégia al juego, dependiendo del terreno será más favorable o menos para aliados o enemigos, de esta manera una mejora que de base era 10 en defensa por ejemplo, podría ser 20 para aliados o 30 para enemigos.
